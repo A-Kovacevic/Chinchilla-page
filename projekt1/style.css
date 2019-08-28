@@ -1,0 +1,1085 @@
+/*
+Theme Name: Moja prva tema
+Theme URI: http://motivoweb.com/
+Version: 1.0.0
+Description: A Creative Multipurpose Theme
+Author: motivoweb
+Author URI: http://themeforest.net/user/motivoweb
+Tags: one-column, two-columns, right-sidebar, full-width-template, accessibility-ready, custom-colors, custom-menu, featured-images, post-formats, sticky-post, theme-options, translation-ready , custom-background, custom-header, editor-style, rtl-language-support 
+Text Domain: hala
+*/
+
+/*--------------------------------------------------------------*/
+/*
+-----Header----------
+-----Naslovna--------
+-----Upoznaj me------
+-----Zbrini me-------
+-----Kontakt---------
+-----Footer----------
+-----Single----------
+*/
+/*--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------*/
+						/*Fontovi*/
+/*--------------------------------------------------------------*/
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('assets/fonts/flexslider-icon.eot');
+  src: url('assets/fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('assets/fonts/flexslider-icon.woff') format('woff'), url('assets/fonts/flexslider-icon.ttf') format('truetype'), url('assets/fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+h3 {
+	font-family: 'Mali', cursive;
+	font-size: 22pt;
+	color: white;
+}
+p, li, span, a, option, select, textarea {
+	font-family: 'Source Serif Pro', serif;
+	font-size: 16pt;
+	color: white;
+}
+a{
+	text-decoration: none;
+}
+p .citat{
+	font-family: 'Srisakdi', cursive;
+	font-size: 22pt;
+}
+/*--------------------------------------------------------------*/
+						/*Margine*/
+/*--------------------------------------------------------------*/
+body, div, ul, li, p , h3, a ,content{
+	margin: 0;
+	padding: 0;
+}
+/*--------------------------------------------------------------*/
+						/*HEADER*/
+/*--------------------------------------------------------------*/
+#navbar{
+	z-index: 1;
+	position: relative;	
+}
+.navbar{
+	position: absolute;
+	width: 100%;
+	background-color: rgba(3.1, 3.5, 3.9, 0.2);
+}
+#navbar .logo a{
+	text-decoration: none;
+	font-family: 'Srisakdi', cursive;
+	font-weight: 000;
+	font-size: 25pt;
+	letter-spacing: 1pt;
+	text-shadow: 4px -1px 0 black;
+	float: left;
+	margin-left: 70px;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+#navbar .logo a:hover{
+	color: grey;
+}
+.div-btn{
+	display: none;
+}
+#navbar .nav {
+	float: right;
+	display: inline-block;
+	margin-right: 2%;
+	margin-left: 20%;
+	padding-bottom: 5px;
+	padding-top: 2%;
+
+}
+#navbar .nav ul li{
+	display: inline-block;
+	text-transform: uppercase;
+}
+#navbar .nav ul li a{
+	margin-left: 25px;
+	color: white;
+	font-weight: 000;
+	text-shadow: 1px 0px 0 black;
+}
+#navbar .nav ul li a:hover{
+	color: grey;
+}
+
+
+
+/*--------------------------------------------------------------*/
+							/*NASLOVNA*/
+/*--------------------------------------------------------------*/
+#head-slide{
+	 width: 100%;
+	 position: relative;
+	 background-color: black;
+	 padding-bottom: 1%;
+}
+.h-slide{
+	background-image: url('assets/images/chin1.jpg');
+	background-position: center;
+	filter: grayscale(100%) brightness(90%);
+	width: 98%;
+	height: 700px;
+	margin: 0% 1% 0% 1%;
+}
+.citat{
+	font-family: 'Srisakdi',cursive;
+	font-size: 30pt;
+	color: white;
+	padding-top: 20%;
+	text-align: center;
+	text-shadow: 1px 1px 0 black;
+    font-weight: 600;
+}
+.big-section-naslovna{
+	margin-top: -1px;
+	background-image: linear-gradient(
+		to bottom,
+		black, #464545f5);
+
+}
+.big-section-1{
+	background-color: transparent;
+	border-color: grey;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-block;
+	width: 60%;
+	margin-left: 18%;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	padding: 3% 5%;
+	text-align: center;
+}
+.big-section-1 h3,.mini-section-L h3, .mini-section-R h3, .big-section-2 h3{
+	margin-bottom: 1%;
+}
+.mini-section-naslovna{
+	display: inline-block;
+	margin-top: -1px;
+	background-image: 
+	linear-gradient(
+		to bottom,
+		#464545f5, #656363);
+}
+.mini-section-1{
+	margin-top: 2%;
+	width: 100%;
+	text-align: center;
+	padding: 3% 1%;
+	text-shadow: 1px 3px 0 black;
+}
+.mini-sec-1-txt{
+	float: left;
+	width: 40%;
+	margin-left: 5%;
+	padding-top: 10%;
+	text-align: justify;
+}
+.mini-sec-1-txt h3{
+	margin-bottom: 1%;
+	text-align: center;
+}
+.mini-sec-1-txt h3:hover{
+	color: grey;
+}
+.mini-sec-1-img{
+	float: right;
+	width: 51%;
+	margin-left: 1%;
+}
+.mini-sec-1-img img{
+	border-radius: 1%;
+	width: 80%;
+	filter:brightness(120%);
+}
+.mini-sec-1-img img:hover{
+	filter: grayscale(80%);
+}
+.mini-section-2{
+	width: 100%;
+	text-align: center;
+	padding: 5% 1%;
+	margin-top: 2%;
+	text-shadow: 1px 3px 0 black;
+}
+.mini-sec-2-txt{
+	float: right;
+	width: 42%;
+	margin-right: 4%;
+	padding-top: 8%;
+	text-align: justify;
+}
+.mini-sec-2-txt h3{
+	margin-bottom: 1%;
+	text-align: center;
+}
+.mini-sec-2-txt h3:hover{
+	color: grey;
+}
+.mini-sec-2-img{
+	float: left;
+	width: 49%;
+	height: auto;
+	margin-right: 1%;
+}
+.mini-sec-2-img img{
+	border-radius: 1%;
+	width: 80%;
+	filter:brightness(120%);
+}
+.mini-sec-2-img img:hover{
+	filter: grayscale(80%);
+}
+#content{
+	margin-bottom: -1%;
+}
+.big-section-naslovna2{
+	background-image: 
+	linear-gradient(
+		to bottom,
+		#656363, black);
+	margin-top: -6px;
+	padding-top: 5%;
+	padding-bottom: 3%;
+	display: inline-block;
+}
+.big-section-2{
+	float: left;
+	background-color: transparent;
+	text-shadow: 1px 3px 0 black;
+	border-color: grey;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-block;
+	width: 38%;
+	margin-left: 6%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	padding: 2% 5%;
+	text-align: center;
+}
+.galerija-naslovna{
+	float: right;
+	margin-top: 3%;
+	width: 50%;
+	margin-left: 2%;
+	margin-right: 1%;
+	padding-top: 3%;
+	padding-left: 3%;
+}
+.galerija-naslovna a{
+	width: 50%;
+	filter: grayscale(60%);
+}
+.galerija-naslovna img{
+	width: 250px;
+	height: 200px;
+}
+.big-section-2 ul{
+	list-style-type: none;
+}
+/*--------------------------------------------------------------*/
+						/*UPOZNAJ ME*/
+/*--------------------------------------------------------------*/
+#contain-upoznaj, #contain-zbrini, #contain-kontakt-form, .moj-single-wraper {
+	background-image: 
+	linear-gradient(
+		to bottom,
+		black, #464545f5, #656363, black);
+}
+#sect-1{
+	background-image: url('assets/images/ande.jpeg');
+	filter: grayscale(85%);
+	background-position: center;
+	display: inline-block;
+	padding: 5% 1% 2% 1%;
+	width: 98%
+}
+.cont-small{
+	width: 60%;
+	margin: 7% 20%;
+	text-align: center;
+}
+.cont-small h3{
+	margin-bottom: 1%;
+	text-align: center;
+}
+#sect-2{
+	display: inline-block;
+	width: 98%;
+	margin: 5% 1% 1% 1%;
+}
+#sect-2 h3, .cont-small-1 h3{
+	margin-bottom: 1%;
+	text-align: center;
+}
+.cont-big{
+	float: left;
+	width: 43%;
+	margin-left: 2%;
+	text-align: justify;
+}
+#sect-2 .flexslider{
+	float: right;
+	width: 49%;
+	margin-right: 1%;
+	padding-top: 8%;
+	margin-top: 2%;
+    background-color: transparent;
+    border: none;
+}
+.p-slider{
+	width: 95%;
+	margin: 2%;
+}
+#sect-1-1{
+	display: inline-block;
+	margin: 5% 1% 2% 1%;
+}
+.cont-small-1{
+	text-align: center;
+	width: 70%;
+	margin: 1% 15%;
+}
+#sect-3{
+	width: 98%;
+	margin: auto 1%;
+}
+.p-slider .flexslider{
+	width: 98%;
+	margin: 1%;
+	background-color: transparent;
+	border-color: grey;
+	border-style: solid;
+	border-width: 3px;
+}
+.p-slider .flexslider h3{
+	margin-bottom: 1%;
+	text-align: center;
+}
+
+/*--------------------------------------------------------------*/
+						/*ZBRINI ME*/
+/*--------------------------------------------------------------*/
+#sect-slider-1{
+	display: inline-block;
+	width: 98%;
+	margin: auto 1%;
+	padding-top: 7%;
+}
+.cont-slider{
+	width: 100%;
+}
+.cont-slider .flexslider{
+	background-color: transparent;
+	border-color: black;
+	width: 100%;
+}
+#sect-2-wrap{
+	width: 98%;
+	margin: auto 1%;
+}
+.sect-2, #sect-3{
+	width: 100%;
+	display: inline-block;
+	margin: 3% auto;
+}
+.sect-2-L{
+	float: left;
+	width: 60%;
+	margin-left: 2%;
+	text-align: justify;
+}
+.sect-2-R{
+	float: right;
+	width: 30%;
+	margin-right: 1%;
+}
+.sect-2-R h3, .sect-2-L h3{
+	margin-bottom: 2%;
+}
+.sect-p{
+	background-color: transparent;
+	width: 95%;
+	margin: 2%;
+    border-top-color: grey;
+    border-top-style: solid
+}
+.sect-p h3{
+	text-align: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.sect-p .flexslider{
+	width: 98%;
+	margin: 1%;
+	background-color: transparent;
+	border-color: transparent;
+}
+}
+/*--------------------------------------------------------------*/
+						/*KONTAKT*/
+/*--------------------------------------------------------------*/
+#contain-kontakt-form{
+	background-image: 
+	linear-gradient(
+		to bottom,
+		black, #464545f5, #656363, black);
+	padding-left: 20%;
+	display: inline-block;
+	width: 100%;
+}
+.background{
+	background-image: 
+	linear-gradient(
+		to bottom,
+		black, #464545f5, #656363, black);
+	width: 100%;
+	display: inline-block;
+	height: auto;
+}
+.galerija{
+	float: right;
+	margin-top: 3%;
+	width: 49%;
+	margin-left: 2%;
+	margin-right: 1%;
+	padding-top: 10%;
+	padding-left: 3%;
+}
+.galerija a{
+	width: 50%;
+	filter: grayscale(60%);
+}
+.galerija img{
+	width: 250px;
+	height: 200px;
+}
+.kont-forma{
+	float: left;
+	padding: 10% 0;
+	width: 47%;
+	text-align: center;
+}
+.kont-forma h3{
+	margin-bottom: 5%;
+}
+
+.imeiprezime{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 2%;
+}
+.ime{
+	float: left;
+	width: 49%;
+	margin-right: 1%;
+}
+.prezime{
+	float: right;
+	width: 49%;
+}
+.mailbroj{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 2%;
+}
+.email{
+	float: left;
+	width: 49%;
+	margin-right: 1%;
+}
+.broj{
+	float: right;
+	width: 49%
+}
+.bojaspol{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 2%;
+	text-align: justify;
+	padding-left: 10%;
+}
+.boja{
+	float: left;
+	width: 49%;
+	margin-right: 6%;
+}
+.spol{
+	float: right;
+	width: 42%
+}
+.poruka{
+	width: 100%;
+}
+textarea{
+	margin: 0px;
+    width: 516px;
+    height: 76px;
+}
+.submit{
+	border-radius: 1%;
+}
+footer{
+	background-color: black;
+}
+#kontakt{
+	display: inline-block;
+	width: 100%;
+}
+.kont-opce{
+	float: right;
+	width: 45%;
+	margin: 2%;
+	padding-top: 4%;
+    padding-left: 5%;
+    text-align: center;
+}
+.kont-opce h3{
+	font-size: 20px;
+}
+.kont-opce p{
+	font-size: 17px;
+}
+.karta{
+	float: left;
+	width: 45%;
+	margin-left: 1%;
+}
+button{
+	border-radius: 2%;
+}
+
+
+/*--------------------------------------------------------------*/
+						/*FOOTER*/
+/*--------------------------------------------------------------*/
+#obrazac{
+	display: inline-block;
+	width: 100%;
+	background-color: black;
+}
+.obrasci{
+	width: 100%;
+}
+.imeimail{
+	width: 100%;
+	display: inline-block;
+}
+.divime{
+	float: left; 
+	width: 30%; 
+	margin-right: 1%;
+}
+.divmail{
+	float: left; 
+	width: 30%; 
+	margin-right:1%;
+}
+.pitanja{
+	display: inline-block;
+	float: left;
+	width: 55%;
+	margin-left: 1%;
+	padding: 30px 0;
+}
+.pitanja span, .pitanja p{
+	color: grey;
+	font-size: 14pt;
+}
+.pitanja input, .pitanja textarea{
+	background-color: black;
+	color: grey;
+}
+.kontakt{
+	margin-top: 4%;
+	display: inline-block;
+	text-align: center;
+	padding: 30px 0;
+	float: right;
+	width: 40%;
+	margin-right: 1%;
+}
+.kontakt p{
+	font-size: 14pt;
+	color: grey;
+}
+.textarea{
+	width: 96%;
+}
+.textarea textarea{
+	width: 95%;
+}
+
+
+/*--------------------------------------------------------------*/
+						/*Media queries*/
+/*--------------------------------------------------------------*/
+						/*1200px*/
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 1300px){
+nav, body {
+	width: 100%;
+}
+.citat{
+	padding-top: 30%;
+}
+.mini-sec-1-txt{
+	padding-top: 5%;
+}
+.mini-sec-2-txt{
+	padding-top: 4%;
+}
+}
+/*--------------------------------------------------------------*/
+						/*1100px*/
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 1100px){
+nav, body {
+	width: 99%;
+}
+#navbar .nav{
+	margin-left: 15%;
+}
+.mini-sec-1-txt, .mini-sec-2-txt{
+	padding-top: 0;
+}
+.mini-sec-1-img, .mini-sec-2-img{
+	padding-top: 2%;
+}
+.big-section-naslovna2{
+	padding-top: 5%;
+	width: 100%;
+}
+
+.galerija-naslovna{
+	padding-top: 15%;
+	text-align: center;
+}
+.galerija-naslovna img{
+	width: 150px;
+	height: 100px;
+}
+.galerija{
+	padding-top: 20%;
+}
+.galerija img{
+	width: 200px;
+	height: 150px;
+}
+/*upoznaj me*/
+#sect-2 .flexslider{
+	padding-top: 8%;
+}
+#sect-3{
+	margin: 1% auto;
+}
+.kont-forma, .kont-opce{
+	margin-top: 5%;
+}
+}
+/*--------------------------------------------------------------*/
+						/*930px*/
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 950px){
+nav, body {
+	width:98%;
+	margin: auto 1%;
+}
+/*header*/
+#navbar .nav{
+	margin-left: 5%;
+}
+/*naslovna*/
+.big-section-1 h3, .mini-section-L h3, .mini-section-R h3, .big-section-2 h3{
+	font-size: 20pt;
+}
+.big-section-1 p, .mini-section-L p, .mini-section-R p, .big-section-2 li, {
+	font-size: 15pt;
+}
+.mini-sec-1-txt, .mini-sec-2-txt{
+	padding-top: 0;
+}
+.mini-sec-1-img, .mini-sec-2-img{
+	padding-top: 4%;
+}
+.big-section-naslovna2{
+	width: 100%;
+	padding-top: 5%;
+}
+/*upoznaj me*/
+#sect-1 .cont-small{
+	margin: 10% 15% 2% 15%;
+}
+#sect-2 .cont-big{
+	float: none;
+	width: 98%;
+	margin: 0 1%;
+}
+#sect-2 .flexslider{
+	float: none;
+	width: 98%;
+	margin: 0 1%;
+}
+/*zbrini me*/
+.cont-slider{
+	margin-top: 10%;
+}
+/*kontakt*/
+.kontakt {
+	padding: 50px 0;
+}
+.kontakt p{
+	font-size: 12pt;
+}
+.kont-forma, .kont-opce{
+	margin-top: 7%;
+}
+.galerija img{
+	width: 150px;
+	height: 100px;
+}
+.galerija{
+	padding-left: 6%;
+	padding-top: 30%;
+}
+textarea{
+	width: 400px;
+}
+}
+/*--------------------------------------------------------------*/
+						/*860px*/
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 860px){
+#navbar .logo{
+	float: none;
+	text-align: center;
+}
+#navbar .nav{
+	float: none;
+	text-align: center;
+	margin-left: 15%;
+}
+.galerija{
+	display: none;
+}
+.bojaspol{
+	padding-left: 15%;
+}
+.kont-forma{
+	float: none;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+/*--------------------------------------------------------------*/
+						/*810px*/
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 810px){
+
+#navbar .nav{
+	text-align: center;
+}
+/*naslovna*/
+.h-slide{
+	background-position: bottom;
+}
+.h-slide .citat{
+	padding-top: 50%;
+}
+.big-section-naslovna2{
+	width: 100%;
+}
+.big-section-2, {
+	float: none;
+	text-align: center;
+}
+.galerija-naslovna, #single_image, .group{
+	background-color: transparent;
+	display: none;
+}
+/*kontakt*/
+.kont-forma, .kont-opce{
+	margin-top: 15%;
+}
+#contain-kontakt-form{
+	padding-top: 7%;
+}	
+
+/*--------------------------------------------------------------*/
+						/*780px*/
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 810px){
+	.logo{
+		text-align: center;
+	}
+#navbar .nav{
+	margin-left: 10%;
+}
+.kont-opce{
+	float: none;
+	width: 98%;
+	text-align: center;
+	margin: 7% 1% 2% 1%;
+}
+.karta{
+	float: none;
+	width: 98%;
+	margin: 5% 1% 2% 1%;
+}
+.kont-forma{
+	float: none;
+	width: 98%;
+	margin: 1% 1% 2% 1%;
+}
+
+}	
+/*--------------------------------------------------------------*/
+						/*650px*/
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 650px){
+/*header*/
+#navbar .nav{
+	margin-left: 15%;
+	}
+/*naslovna*/	
+.h-slide .citat{
+	font-size: 25pt;
+	padding-top: 65%;
+}
+.mini-section-L h3, .mini-section-R h3, .big-section-2 h3{
+	font-size: 18pt;
+}
+.mini-section-L p, .mini-section-R p, .big-section-2 li {
+	font-size: 13pt;
+}
+/*upoznaj me*/
+#sect-1 .cont-small{
+	margin: 20% 15% 2% 15%;
+}
+/*zbrini me*/
+.cont-slider{
+	width: 98%;
+	margin-top: 15%;
+}
+.sect-2-L, .p-L{
+	float: none;
+	width: 98%;
+	margin: 2% 1% 1% 1%;
+}
+.sect-2-R, .p-R{
+	float: none;
+	width: 98%;
+	margin: 2% 1% 1% 1%;
+	text-align: center;
+}
+.sect-2-R ul{
+	list-style-type: none;
+}
+.kont-forma{
+	padding-top: 20%;
+}
+
+}
+/*--------------------------------------------------------------*/
+						/*590px*/
+/*--------------------------------------------------------------*/
+
+@media screen and (max-width: 590px){
+	#navbar .logo{
+	font-size: 25pt;
+	float: left;
+	margin-left: 2%;
+	padding-bottom: 2%;
+}
+/*header*/
+#navbar .nav{
+	display: none;
+}
+.navbar{
+	height: 10px;
+}
+.div-btn{
+	display: inline-block;
+	float: right;
+}	
+.div-btn button h3{
+	font-family: 'Srisakdi', cursive;
+	font-weight: 000;
+	font-size: 25pt;
+	letter-spacing: 1pt;
+	text-shadow: 4px -1px 0 black;
+}	
+.div-btn button {
+	border: none;
+	float: right;
+	margin-right: 10%;
+	padding: 2%;
+	background-color: transparent;
+	color: grey;
+	position: relative;
+}
+.div-btn button:hover{
+	border-color: grey;
+	border-bottom: solid 1px;
+}
+.ulli{
+	visibility: hidden;
+	background-color: black;
+	display: block;
+	z-index: 1;
+	position: absolute;
+    top: 85%;
+    right: 1%;
+}
+.div-btn button:hover + .ulli {
+	visibility: visible;
+	min-width: 10%;
+}
+.div-btn .ulli ul li{
+	list-style-type: none;
+	display: block;
+	padding: 10px;
+	color: grey;
+}	
+.div-btn .ulli ul li:focus-within > ulli ul li a:hover{
+}/*https://css-tricks.com/solved-with-css-dropdown-menus/  i dalje ne radi*/
+.ulli ul li a{
+	text-transform: uppercase;
+	cursor: pointer;
+	color: grey;
+}
+.ulli ul li a:active{
+
+}
+
+
+}
+/*naslovna*/
+.logo{
+	float: left;
+	margin-left: 20px;
+}
+.big-section-1, .big-section-2{
+	width: 98%;
+	margin: 1%;
+}
+.mini-sec-1-txt, .mini-sec-2-txt{
+	float: none;
+	width: 98%;
+	margin: 1%;
+}
+.mini-sec-1-img, .mini-sec-2-img{
+	float: none;
+	width: 98%;
+	margin: 1%;
+	margin-top: 10%
+}
+/*upoznaj me*/
+.p-slider .flexslider{
+	margin-top: 5%;
+}
+/*zbrini me*/
+.cont-slider {
+	width: 98%;
+}
+}
+.kont-forma{
+	padding-top: 10%;
+}
+textarea{
+	margin: 0px;
+    width: 410px;
+    height: 76px;
+}
+.slicica{
+	display: none;
+}
+/*--------------------------------------------------------------*/
+						/*430px*/
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 430px){
+
+.logo{
+	float: left;
+}	
+
+.citat{
+	padding-top: 85%;
+}
+.big-section-1, .big-section-2{
+	width: 98%;
+	margin: 1%;
+}
+.mini-sec-1-txt, .mini-sec-2-txt{
+	float: none;
+	width: 98%;
+	margin: 1%;
+}
+.mini-sec-1-img, .mini-sec-2-img{
+	float: none;
+	width: 98%;
+	margin: 1%;
+	margin-top: 10%
+}
+#obrazac{
+	display: block;
+}
+.pitanja{
+	display: block;
+	float: none;
+	width: 99%;
+	margin-left: 1%;
+}
+.divime{
+	display: block;
+	float: none; 
+	width: 70%; 
+}
+.divmail{
+	display: block;
+	float: none; 
+	width: 70%; 	
+}
+.pitanja span, .pitanja p, .kontakt p{
+	font-size: 12pt;
+}
+.kontakt{
+	display: block;
+	padding: 30px 0;
+	float: none;
+	width: 90%;
+	margin-right: 1%;
+}
+input, .divime, .divmail{
+	width: 98%;
+}
+/*upoznaj me*/
+#sect-1 .cont-small{
+	width: 98%;
+	margin: 15 1% 1% 1%;
+}
+.p-slider .flexslider{
+	margin-top: 15%;
+}
+/*zbrini me*/
+.cont-slider {
+	width: 98%;
+}
+
+textarea{
+	margin: 0px;
+    width: 350px;
+    height: 76px;
+}
+.bojaspol{
+	padding-left: 1%;
+}
+}
